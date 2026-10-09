@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seasons — Demo</title>
+<link rel="stylesheet" href="vendor/reveal.css">
+<link rel="stylesheet" href="vendor/theme/white.css">
+<style>
+  .reveal .controls { color: #2C4A6E !important; }
+  .reveal.has-dark-background .controls { color: #fff !important; }
+  .reveal h1, .reveal h2 { color: #2C4A6E; }
+  .reveal.has-dark-background h1, .reveal.has-dark-background h2 { color: #fff; }
+  .reveal p, .reveal li { font-size: .7em; }
+  .reveal .kicker { font-size: .5em; font-weight: 700; letter-spacing: .3em; text-transform: uppercase; color: #2C4A6E; margin: 0 0 .4em; }
+  .reveal kbd { font-size: .8em; background: #EDF1F5; color: #2C4A6E; border-radius: 4px; padding: .05em .4em; }
+  .reveal.has-dark-background kbd { background: rgba(255,255,255,.14); color: #fff; }
+  .reveal .themes a { display: inline-block; margin: 0 .3em; padding: .2em .7em; border-radius: 999px; background: #EDF1F5; color: #2C4A6E; font-size: .8em; text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="reveal">
+  <div class="slides">
+
+    <section data-background-color="#ffffff">
+      <p class="kicker">Demo · reveal.js plugin</p>
+      <h1>Seasons</h1>
+      <p>Halloween · Christmas · Easter for any talk</p>
+    </section>
+
+    <section data-background-color="#1E3352">
+      <p class="kicker" style="color:#9FB3CC">Part 1</p>
+      <h2>A dark slide</h2>
+      <p>Headings glow softly in the colour of the season.</p>
+    </section>
+
+    <section data-background-color="#ffffff">
+      <h2>Pick a theme</h2>
+      <p class="themes"><a href="?season=halloween">Halloween</a><a href="?season=weihnachten">Christmas</a><a href="?season=ostern">Easter</a></p>
+      <p>Without a choice the date decides: Halloween in October, Christmas from the first Sunday of Advent to 6 January, Easter around Easter. In between, the next season.</p>
+    </section>
+
+    <section data-background-color="#ffffff" data-season="off">
+      <h2>A serious slide</h2>
+      <p><code>data-season="off"</code> fades every effect out while this slide is showing.</p>
+    </section>
+
+    <section data-background-color="#1E3352">
+      <h2>Controls</h2>
+      <ul>
+        <li><kbd>W</kbd> — on / off &nbsp;·&nbsp; <kbd>Shift</kbd> + <kbd>W</kbd> — a surprise, right now</li>
+        <li><code>?season=ostern</code> · <code>?season=off</code> · <code>?season=wild</code></li>
+      </ul>
+    </section>
+
+  </div>
+</div>
+<script src="vendor/reveal.js"></script>
+<script src="plugin.js"></script>
+<script>
+  Reveal.initialize({
+    hash: true,
+    // Demo only: a faster pace so you see something right away.
+    // In a real talk leave `minutes` out.
+    seasons: { minutes: { hanger: 0.4, flyer: 0.5, flash: 1.5 } },
+    plugins: [ RevealSeasons ]
+  });
+</script>
+</body>
+</html>

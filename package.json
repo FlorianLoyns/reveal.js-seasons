@@ -1,0 +1,14 @@
+{
+  "name": "reveal.js-seasons",
+  "version": "1.1.0",
+  "description": "A seasonal overlay for any reveal.js presentation: Halloween, Christmas and Easter themes picked by date, with a corner decoration, something hanging on a thread, things flying past, a ground layer and a title-slide label. Never touches slide content; per-slide opt-out.",
+  "keywords": ["reveal", "reveal.js", "seasons", "halloween", "christmas", "easter", "overlay", "reveal-plugin", "plugin"],
+  "homepage": "https://github.com/florianloyns/reveal.js-seasons",
+  "repository": { "type": "git", "url": "https://github.com/florianloyns/reveal.js-seasons.git" },
+  "main": "plugin/seasons/seasons.js",
+  "module": "plugin/seasons/seasons.esm.js",
+  "files": ["plugin", "README.md", "LICENSE"],
+  "peerDependencies": { "reveal.js": ">=4.2" },
+  "author": "Florian Loyns",
+  "license": "MIT"
+}
