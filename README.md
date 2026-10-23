@@ -6,6 +6,8 @@ A seasonal layer for **any** [reveal.js](https://revealjs.com) presentation, wit
 
 **[Live demo](https://florianloyns.github.io/reveal.js-seasons/demo.html)**
 
+[![Screenshot](screenshot.svg)](https://florianloyns.github.io/reveal.js-seasons/demo.html)
+
 | | Corner (top left) | On a thread | Flying past | Bottom edge | Title slide |
 | --- | --- | --- | --- | --- | --- |
 | **Halloween** | a simple corner cobweb | spider | bats, lightning | fog | *Halloween-Special* |
